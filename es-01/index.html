@@ -1,18 +1,67 @@
 <html>
     <head>
         <title>Prima pagina</title>
+        <link rel="stylesheet" href="style.css"> <!--collegare un css ad un html-->
+        <link rel="icon" href="https://band-logos.com/wp-content/uploads/2025/07/bmth-band-logo-2.jpg"> <!--per mostrare un'icona nella finestra del sito-->
+        <style>
+            .testo-rosso {
+                color: red;
+            }
+            .testo-azzurro {
+                color: rgb(0, 159, 233);
+            }
+            .testo-verde {
+                color: green;
+            }
+        </style>
     </head>
     <body>
+        <nav>
+            <a href="C:\Users\Cescot\Desktop\Informatica\es 3\esercizio 3.html">esercizio 3</a><br>
+            <a href="C:\Users\Cescot\Desktop\Informatica\es-01\sottocartella\pagina 2.html">pagina 2</a><br>
+            <a href="C:\Users\Cescot\Desktop\Informatica\es 2\esercizio 2.html">esercizio 2</a><br>
+        </nav>
         <h1 class="titolo principale">
             Hello World!
+            <h2><u>sottolineato</u></h2>
+            <h2><i>italic</i></h2> <!--da evitare di usare questi 4 tag-->
+            <h2><b>grassetto</b></h2>
+            <h2><strong>sottolinea l'importanza delle parole</strong></h2> <!--importante per dare un'enfasi al contenuto
+                                                                            quando google analizza il documento cerca di creare una mappa concettuale 
+                                                                            con gli strong, dandogli maggiore importanza-->
         </h1>
-        <a class="testo rosso" href="#sezione 2">vai alla sezione 2</a> <!--il # nell HREF serve per trovare una class nella pagina-->
+        <a class="testo-azzurro" href="#sezione 2">vai alla sezione 2</a> <!--il # nell HREF serve per trovare una class nella pagina-->
         <!--questo è un commento-->
-        <p class="testo principale / testo rosso">
+        <p class="testo-rosso">
             <span>Lorem ipsum</span> <br>dolor sit amet. <!--lo SPAN racchiude un pezzo di testo-->
-            <a href="https://www.bmthofficial.com/">BMTH</a> <!--A è per i testi linkabili-->
+            <a href="https://www.bmthofficial.com/" title="titolo di prova" target="_blank" style="color: rgb(0, 134, 151);">BMTH</a> <!--A è per i testi linkabili-->
+                                                                                 <!--target blank serve per aprire un'altra pagina del link-->
+                                                                                 <!--TITLE in un link fa vedere un testo al passare sopra ad un testo-->
         </p>
-        <h2 id="sezione 2">Sezione 2</h2>
-        <a href="sottocartella/pagina 2.html">pagina 2</a>
+        <button onclick="" title="Vai a..." type="button" disabled> <!--ONCLICK serve per interagire con JavaScript, poi si può mettere un TITLE, un attributo TYPE con diversi valori-->
+            bottone
+        </button>
+        <div>
+        <!--blocco che non influisce con il resto, può raggruppare i contenuti, poter modificare tutti gli elementi in una sezione-->
+            <h2 id="sezione 2">Sezione 2</h2>
+            <a href="sottocartella/pagina 2.html">pagina 2</a>
+        </div>
+        <ul class="testo-verde">
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+        </ul>
+        <ol>
+            <li>elemento 1</li>
+            <li>elemento 2</li>
+            <li>elemento 3</li>
+        </ol>
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bmthofficial.com%2Fmusic%2F&psig=AOvVaw0c5kfdYbe-hMuCDEACghkR&ust=1761650911591000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOiN_ZijxJADFQAAAAAdAAAAABAX" 
+        width="200" height="200" alt="descrizione dell'immagine che compare anche se l'immagine non si carica">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bmthofficial.com%2Fmusic%2F&psig=AOvVaw0c5kfdYbe-hMuCDEACghkR&ust=1761650911591000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOiN_ZijxJADFQAAAAAdAAAAABAj"
+        alt="" width="300" height="200">
+        <footer>
+            Piè di pagina
+        </footer>
     </body>
 </html>
