@@ -1,25 +1,21 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8"> <!--utf-8 serve per decodificare i vari alfabeti-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--meta name="viewport" è usato per poter isualizzare bene su qualsiasi tipo di schermo la pagina web-->
+        <meta name="description" content="Descrizione del documneto per i motori di ricerca"> <!--meta name="description" mostra il testo sotto al link di accesso al sito (usato per dare ai motori di ricerca più informazioni)-->
         <title>Prima pagina</title>
         <link rel="stylesheet" href="style.css"> <!--collegare un css ad un html-->
         <link rel="icon" href="https://band-logos.com/wp-content/uploads/2025/07/bmth-band-logo-2.jpg"> <!--per mostrare un'icona nella finestra del sito-->
         <style>
-            .testo-rosso {
-                color: red;
-            }
-            .testo-azzurro {
-                color: rgb(0, 159, 233);
-            }
-            .testo-verde {
-                color: green;
-            }
+            /*CSS integrato nel documento style.css*/
         </style>
     </head>
     <body>
         <nav>
-            <a href="es 3/esercizio 3.html">esercizio 3</a><br>
-            <a href="pagina 2.html">pagina 2</a><br>
-            <a href="es 2\esercizio 2.html">esercizio 2</a><br>
+            <a href="es-01/esercitazioni/esercizio-3.html">esercizio 3</a><br>
+            <a href="es-01/sottocartelle/pagina-2.html">pagina 2</a><br>
+            <a href="es-01/esercitazioni/esercizio-2.html">esercizio 2</a><br>
         </nav>
         <h1 class="titolo principale">
             Hello World!
@@ -30,7 +26,8 @@
                                                                             quando google analizza il documento cerca di creare una mappa concettuale 
                                                                             con gli strong, dandogli maggiore importanza-->
         </h1>
-        <a class="testo-azzurro" href="#sezione 2">vai alla sezione 2</a> <!--il # nell HREF serve per trovare una class nella pagina-->
+        <p>questo è un testo coumne</p>
+        <a href="#sezione 2">vai alla sezione 2</a> <!--il # nell HREF serve per trovare una class nella pagina-->
         <!--questo è un commento-->
         <p class="testo-rosso">
             <span>Lorem ipsum</span> <br>dolor sit amet. <!--lo SPAN racchiude un pezzo di testo-->
@@ -43,10 +40,10 @@
         </button>
         <div>
         <!--blocco che non influisce con il resto, può raggruppare i contenuti, poter modificare tutti gli elementi in una sezione-->
-            <h2 id="sezione 2">Sezione 2</h2>
-            <a href="sottocartella/pagina 2.html">pagina 2</a>
+            <h2 id="sezione-2">Sezione 2</h2>
+            <p class="testo-principale">andate alla <a href="sottocartella/pagina 2.html">pagina 2</a></p>
         </div>
-        <ul class="testo-verde">
+        <ul>
             <li>elemento 1</li>
             <li>elemento 2</li>
             <li>elemento 3</li>
@@ -56,9 +53,9 @@
             <li>elemento 2</li>
             <li>elemento 3</li>
         </ol>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bmthofficial.com%2Fmusic%2F&psig=AOvVaw0c5kfdYbe-hMuCDEACghkR&ust=1761650911591000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOiN_ZijxJADFQAAAAAdAAAAABAX" 
+        <img src="https://static.vecteezy.com/ti/vettori-gratis/p1/3623626-tramonto-lago-paesaggio-illustrazione-gratuito-vettoriale.jpg" 
         width="200" height="200" alt="descrizione dell'immagine che compare anche se l'immagine non si carica">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bmthofficial.com%2Fmusic%2F&psig=AOvVaw0c5kfdYbe-hMuCDEACghkR&ust=1761650911591000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOiN_ZijxJADFQAAAAAdAAAAABAj"
+        <img src="https://cdn.shortpixel.ai/spai/q_lossless+w_1082+to_auto+ret_img/independent-photo.com/wp-content/uploads/2022/02/Yifeng-Ding-scaled.jpeg"
         alt="" width="300" height="200">
         <footer>
             Piè di pagina

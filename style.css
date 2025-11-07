@@ -1,0 +1,34 @@
+/*tutti i paragrafi colorati di blu*/
+p { 
+    color: blue;
+}
+
+/*tutti gli elementi che hanno quella classe (la classe conta più del nome del tag)*/
+.testo-rosso {
+    color: red;
+}
+
+/*L'elemento con ID "sezione-2"*/
+#sezione-2 {
+    color: purple;
+}
+
+/*tutti gli elementi di tipo A che hanno la classe "testo-rosso"*/
+a.testo-rosso{
+    color: brown;
+}
+
+/*tutti gli elementi di tipo A che hanno la classe "testo-rosso" E "testo-marrone"*/
+a.testo-rosso.testo-marrone {
+    color: darkred;
+}
+
+/*tutti gli elementi di tipo A racchiusi all'interno di un elemento con classe "testo-principale"*/
+p.testo-principale a {
+    color: yellow;
+}
+
+/*tutti gli elementi figli di un paragrafo*/
+p > * {
+    color: green;
+}
